@@ -17,6 +17,7 @@ app.get("/", (req, res) => {
 app.post("/register", (req, res) => {
   // Example: const { email, password } = req.body;
   // TODO: Add registration logic here (save user to DB, check if user exists, hash password)
+  // אפשר לשמור בינתיים את הנתונים לוקלית בתוך קובץ גייסון
   res.status(501).json({ message: "Registration not implemented yet" });
 });
 
