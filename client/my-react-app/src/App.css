@@ -54,6 +54,25 @@
     transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
       scale(0.8);
   }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(255, 223, 186, 0.8), rgba(170, 59, 255, 0.8));
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+  }
+
+  .hero-headline {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
 }
 
 #center {

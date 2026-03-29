@@ -9,15 +9,25 @@ export default function MyButton() {
   return (
     <div
       style={{
+        position: "absolute",
+        top: "1rem",
+        right: "1rem",
         display: "flex",
         gap: "1rem",
-        justifyContent: "center",
-        marginTop: "2rem",
       }}
     >
-      {/* TODO: Implement navigation to /login and /register */}
-      <button onClick={() => navigate("/login")}>Login</button>
-      <button onClick={() => navigate("/register")}>Register</button>
+      <button
+        onClick={() => navigate("/login")}
+        style={{ padding: "0.5rem 1rem", borderRadius: "5px", background: "#aa3bff", color: "white", border: "none", cursor: "pointer" }}
+      >
+        Login
+      </button>
+      <button
+        onClick={() => navigate("/register")}
+        style={{ padding: "0.5rem 1rem", borderRadius: "5px", background: "#ffdfba", color: "#aa3bff", border: "none", cursor: "pointer" }}
+      >
+        Register
+      </button>
     </div>
   );
 }

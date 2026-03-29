@@ -11,8 +11,8 @@ import Register from "./pages/Register";
 function Home() {
   // This is the landing page. Students should see the Login and Register buttons here.
   return (
-    <div>
-      <h1>Welcome to my app</h1>
+    <div className="hero">
+      <h1 className="hero-headline">Welcome to Feel It</h1>
       <MyButton />
     </div>
   );
